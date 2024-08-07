@@ -386,17 +386,17 @@ export const DEFAULT_MODELS = [
       sorted: 3,
     },
   })),
-   ...anthropicModels.map((name) => ({
-     name,
-     available: true,
-     sorted: seq++,
-     provider: {
-       id: "anthropic",
-       providerName: "Anthropic",
-       providerType: "anthropic",
-       sorted: 4,
-     },
-   })),
+   // ...anthropicModels.map((name) => ({
+   //   name,
+   //   available: true,
+   //   sorted: seq++,
+   //   provider: {
+   //     id: "anthropic",
+   //     providerName: "Anthropic",
+   //     providerType: "anthropic",
+   //     sorted: 4,
+   //   },
+   // })),
   // ...baiduModels.map((name) => ({
   //   name,
   //   available: true,
