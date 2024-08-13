@@ -77,6 +77,11 @@ if (mode !== "export") {
       {
         source: "/api/proxy/google/:path*",
         destination: "https://generativelanguage.googleapis.com/:path*",
+        has:[{
+          type:"header",
+          key:"X-Forwarded-For",
+          value:hostname(),
+          }],
       },
       {
         source: "/api/proxy/openai/:path*",
