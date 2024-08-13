@@ -1,5 +1,5 @@
 import webpack from "webpack";
-
+const {hostname} = require("os");
 const mode = process.env.BUILD_MODE ?? "standalone";
 console.log("[Next] build mode", mode);
 
