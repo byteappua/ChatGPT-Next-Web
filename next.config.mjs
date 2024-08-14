@@ -1,5 +1,4 @@
 import webpack from "webpack";
-const {hostname} = require("os");
 const mode = process.env.BUILD_MODE ?? "standalone";
 console.log("[Next] build mode", mode);
 
@@ -77,11 +76,6 @@ if (mode !== "export") {
       {
         source: "/api/proxy/google/:path*",
         destination: "https://generativelanguage.googleapis.com/:path*",
-        has:[{
-          type:"header",
-          key:"X-Forwarded-For",
-          value:hostname(),
-          }],
       },
       {
         source: "/api/proxy/openai/:path*",
