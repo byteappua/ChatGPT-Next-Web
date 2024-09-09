@@ -294,14 +294,6 @@ const googleModels = [
   "gemini-1.0-pro",
   "gemini-pro",
   "gemini-1.0-pro-001",
-  "gemini-1.0-pro-vision-latest",
-  "gemini-pro-vision",
-  "text-bison-001",
-  "text-embedding-004",
-  "chat-bison-001",
-  "embedding-001",
-  "embedding-gecko-001",
-  "aqa",
 ];
 
 const anthropicModels = [
