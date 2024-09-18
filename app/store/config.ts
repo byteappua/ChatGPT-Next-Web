@@ -60,7 +60,7 @@ export const DEFAULT_CONFIG = {
 
   modelConfig: {
     model: "gemini-1.5-flash-latest" as ModelType,
-    providerName: "OpenAI" as ServiceProvider,
+    providerName: "Google" as ServiceProvider,
     temperature: 0.5,
     top_p: 1,
     max_tokens: 4000,
