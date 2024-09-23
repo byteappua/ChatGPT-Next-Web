@@ -476,7 +476,7 @@ export function ChatActions(props: {
   const currentModel = chatStore.currentSession().mask.modelConfig.model;
   const currentProviderName =
     chatStore.currentSession().mask.modelConfig?.providerName ||
-    ServiceProvider.Google;
+    ServiceProvider.OpenAI;
   const allModels = useAllModels();
   const models = useMemo(() => {
     const filteredModels = allModels.filter((m) => m.available);
