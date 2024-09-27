@@ -45,6 +45,7 @@ export function AuthPage() {
 
   return (
     <div className={styles["auth-page"]}>
+      <TopBanner></TopBanner>
       <div className={styles["auth-header"]}>
         <IconButton
           icon={<LeftIcon />}
