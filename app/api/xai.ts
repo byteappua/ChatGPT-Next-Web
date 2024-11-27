@@ -108,6 +108,7 @@ async function request(req: NextRequest) {
       console.error(`[XAI] filter`, e);
     }
   }
+  console.log("fetchOptions", fetchOptions);
   try {
     const res = await fetch(fetchUrl, fetchOptions);
 
